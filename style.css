@@ -355,15 +355,7 @@ template {
 
 /* Actual css */
 
-#Home-Page{
-  background-image: url(Assets/kard-bg-img.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  overflow-x: hidden;
-}
-
-#heading-bar{
+#navigation-bar{
   position: fixed;
   display: flex;
   justify-content: center;
@@ -397,6 +389,32 @@ template {
 }
 .menu-logo{
   height: 40px;
+}
+#Page-Tag{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  left: 2.5%;
+
+}
+.Page-Tag p{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: 'Cookie', cursive;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 30px;
+  outline: 1px solid green;
+}
+
+#Home-Page{
+  background-image: url(Assets/kard-bg-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 #scroll{
@@ -544,4 +562,15 @@ template {
   .name-label-sep{
     width: 5vw;
   }
+}
+
+
+
+#Profile-Page{
+  background-color: rgb(208, 208, 140)
+  /* background-image: url(Assets/kard-bg-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden; */
 }
