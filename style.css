@@ -370,7 +370,6 @@ template {
   height: 50px;
   background-color: transparent;
   border: none;
-  cursor: pointer;
 }
 .menu-button{
   position: absolute;
@@ -382,7 +381,6 @@ template {
   height: 40px;
   background-color: transparent;
   border: none;
-  cursor: pointer;
 }
 .name-logo{
   height: 50px;
@@ -396,7 +394,7 @@ template {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  left: 2.5%;
+  left: 3.5%;
   z-index: 10;
 }
 .Page-Tag p{
@@ -405,12 +403,17 @@ template {
   font-family: 'Cookie', cursive;
   font-size: 26px;
   font-weight: 600;
+  margin: 0;
   color: black;
-  margin: 30px;
+}
+@media (max-width: 576px){
+  .Page-Tag p{
+    font-size: 18px;
+  }
 }
 
 #Home-Page{
-  background-image: url(Assets/kard-bg-img.jpg);
+  background-image: url(Assets/Home_bg_img.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -422,7 +425,7 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   top: 100vh;
   background-color: rgb(0, 0, 0);
 }
@@ -489,7 +492,6 @@ template {
   padding: 0;
   border: 0;
   background-color: rgba(255, 255, 255, 0);
-  cursor: pointer;
 }
 .left-img-container img,
 .right-img-container img{
@@ -500,8 +502,8 @@ template {
 }
 
 @media (max-width: 576px) {
-  body{
-      background-image: url(Assets/kard-phone-bg-img.jpg);
+  #Home-Page{
+      background-image: url(Assets/Home_bg_img_phone.jpg);
   }
   .title{
     margin-top: 40px;
@@ -565,7 +567,6 @@ template {
 }
 
 #Profile-Page{
-  background-image: url(Assets/ACE.png);
   background-color: rgb(0, 0, 0);
   background-size: auto calc(100vh - 100px);
   background-position: center top 90px;
@@ -667,3 +668,182 @@ template {
   margin-left: 5%;
   margin-right: 5%;
 }
+
+@media (max-width: 576px){
+  #Profile-Page{
+    background-size: contain;
+  }
+  .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+  }
+  .profile-pic{
+    all: unset;
+    height: 44vh;
+    outline: 1px solid gold;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 16%;
+    margin-bottom: 2%;
+  }
+  .profile-pic img{
+    all: unset;
+    height: 44vh;
+    box-shadow: 20px 20px 10px rgba(88, 88, 88, 0.6);
+  }
+  .profile-info{
+    display: flex;
+    flex-direction: column;
+    height: 38vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .profile-info h1{
+    font-size: 40px;
+  }
+  .profile-info h2{
+    font-size: 20px;
+  }
+  .profile-info div h3{
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .line{
+    height: 2px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .other-pics{
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .other-pics a{
+    width: 33%;
+    height: 0;
+    padding-bottom: 33%;
+    border-radius: 50%;
+  }
+  .other-pics a img{
+    width: 100%;
+    border-radius: 50%;
+  }
+  .mid-pic{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+  .other-names{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 12%;
+  }
+  .other-names p{
+    margin-top: 1%;
+    width: 33%;
+    text-align: center;
+  }
+  .mid-name{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+}
+
+#Discography-Page{
+  background-image: url(Assets/Discograpghy_bg_img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+#Discography-Page section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.discography{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 65px;
+}
+.dis-title{
+  text-align: center;
+  font-size: 57px;
+  font-style: italic;
+  color: rgb(41, 41, 41);
+  font-family: Segoe UI Black;
+  margin-bottom: 70px;
+}
+.discography-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+  width: 90vw;
+}
+.album-container{
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+.album-container img{
+  width: 315px;
+}
+.album-container div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 315px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+.album-container div p{
+  margin: 0;
+  font-weight: 700;
+}
+.right-name{
+  font-family: Segoe UI;
+}
+.page-turn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.page-turn img{
+  width: 25px;
+  height: 40px;
+}
+.page-turn p{
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.page-turn button{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 576px){
+  #Discography-Page{
+    background-image: url(Assets/Discograpghy_bg_img_phone.png);
+  }
+  .dis-title{
+    font-size: 10vw;
+    margin-top: 10%;
+    margin-bottom: 40px;
+  }
+
+}
+
