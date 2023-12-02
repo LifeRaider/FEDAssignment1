@@ -880,6 +880,9 @@ template {
 .album-container img{
   width: 315px;
 }
+.album-container img:hover{
+  
+}
 .album-container div{
   display: flex;
   flex-direction: row;
