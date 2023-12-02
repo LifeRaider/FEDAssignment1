@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 </head>
-<body id="Profile-Page" style="background-image: url(Assets/Profile_ACE.png);">
+<body id="Schedule-Page">
   <header id="navigation-bar">
     <a class="name-logo-button" href="index.html"><img class="name-logo" src="Assets\Main_kard.png" alt="KARD"></a>
     <div class="menu">
@@ -33,36 +33,35 @@
       </div>
     </div>
   </header>
-  <div id="Page-Tag">
-    <div class="Page-Tag">
-      <p>PROFILE</p>
-    </div>
+  <div class="Page-Tag">
+    <p>SCHEDULE</p>
   </div>
   <section>
-    <div class="profile">
-      <div class="profile-pic">
-        <img src="Assets\Profile_JSEPH-indi.jpeg" alt="JSEPH">
-      </div>
-      <div class="profile-info">
-        <h1>J.SEPH</h1>
-        <h2>Name: Kim Tae Hyung (김태형)<br>DOB : 1992.06.21</h2>
-        <div>
-          <h3>31</h3>
-          <div class="line"></div>
-          <h3>South Korea</h3>
+    <h1 class="sche-title">SCHEDULE</h1>
+    <div class="calendar">
+      <div class="month">
+        <button onclick="prevMonth()"><img class="fas fa-angle-left prev" src="Assets/Discograpghy_left button.png"></button>
+        <div class="date">
+          <h1></h1>
+          <h2></h2>
         </div>
+        <button onclick="nextMonth()"><img class="fas fa-angle-right next" src="Assets/Discograpghy_right button.png"></button>
       </div>
+      <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="days"></div>
     </div>
-    <div class="other-profiles">
-      <div class="other-pics">
-        <a href="Profile_BM.html"><img src="Assets\Profile_BM-square.jpg" alt="BM-square"></a>
-        <a class="mid-pic" href="Profile_SOMIN.html"><img src="Assets\Profile_SOMIN-square.jpg" alt="SOMIN-square"></a>
-        <a href="Profile_JIWOO.html"><img src="Assets\Profile_JIWOO-square.jpg" alt="JIWOO-square"></a>
-      </div>
-      <div class="other-names">
-        <p>BM</p>
-        <p class="mid-name">SOMIN</p>
-        <p>JIWOO</p>
+    <div class="popup" id="myPopup">
+      <div class="popup-content">
+        <button onclick="closePopUp()">&times;</button>
+        <p></p>
       </div>
     </div>
   </section>

@@ -1212,7 +1212,7 @@ template {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  width: calc(70vw / 7);
+  width: 10vw;
 }
 .days{
   width: 70vw;
@@ -1245,7 +1245,6 @@ template {
 .days button{
   text-align: center;
   word-wrap: break-word;
-  padding: 0;
   font-size: 12px;
   font-weight: 600;
   width: 8vw;
@@ -1288,69 +1287,7 @@ template {
     font-size: 10vw;
   }
   .calendar{
-    width: 84vw;
-  }
-  .month{
-    padding: 0 5%;
-    border-radius: 4px;
-  }
-  .month img{
-    width: 20px;
-  }
-  .month h1{
-    font-size: 20px;
-  }
-  .month h2{
-    font-size: 15px;
-  }
-  .weekdays{
-    width: 84vw;
-    height: 5vh;
-  }
-  .weekdays div{
-    width: calc(84vw / 7);
-  }
-  .days{
-    width: 84vw;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .days div{
-    width: 10vw;
-    height: 10vh;
-    padding: 1vw;
-  }
-  .days button{
-    font-size: 10px;
-    width: 10vw;
-    height: 10vh;
+    width: 85vw;
   }
 }
 
-#Shop-Page{
-  background-image: url(Assets/Discograpghy_bg_img.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  overflow-x: hidden;
-}
-#Shop-Page section{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-.shop{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 65px;
-}
-.shop-title{
-  text-align: center;
-  font-size: 57px;
-  font-style: italic;
-  color: rgb(41, 41, 41);
-  font-family: Segoe UI Black;
-  margin-bottom: 70px;
-}
