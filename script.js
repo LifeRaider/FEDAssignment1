@@ -38,9 +38,9 @@ window.onload = function() {
 const date = new Date();
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const eventDate = {
-  '2023-12-9': ['New York Concert', "K WAVE NEW YORK 2023<br>장소 : NEW YORK, USA<br>시간 : 4:00PM"],
-  '2023-12-10': ['Miami Concert', "K WAVE Miami 2023<br>장소 : Miami, USA<br>시간 : 5:00PM"],
-  '2023-12-31': ['Seoul Countdown Party', "Countdown Party 2023<br>장소 : Seoul, South Korea<br>시간 : 9:00PM"]
+  '2023-12-9': ['New York Concert', "K WAVE NEW YORK 2023<br><hr><br>장소 : NEW YORK, USA<br>날짜 : 2023.12.09<br>시간 : 4:00PM"],
+  '2023-12-10': ['Miami Concert', "K WAVE Miami 2023<br><hr><br>장소 : Miami, USA<br>날짜 : 2023.12.10<br>시간 : 5:00PM"],
+  '2023-12-31': ['Seoul Countdown Party', "Countdown Party 2023<br><hr><br>장소 : Seoul, South Korea<br>날짜 : 2023.12.31<br>시간 : 9:00PM"]
 };
 
 // display the calandar
@@ -118,12 +118,16 @@ function nextMonth() {
 renderCalendar();
 
 
-// Function to show the popup
+// Function to toggle the popup
 function popUp(d) {
   var popup = document.getElementById("myPopup");
-  console.log(d)
-  popup.style.display = "block";
-  document.querySelector(".popup-content p").innerHTML = eventDate[d][1]
+  if (popup.style.display != "block") {
+    console.log(d)
+    popup.style.display = "block";
+    document.querySelector(".popup-content p").innerHTML = eventDate[d][1]
+  } else {
+    popup.style.display = "none";
+  }
 }
 // Function to hide the popup
 function closePopUp() {
